@@ -5,3 +5,11 @@
 
 # 3 2 4 -> yes
 # 3 2 1 -> no
+
+n = int(input("Введите длину шоколадки: "))
+m = int(input("Введите ширину шоколадки: "))
+k = int(input("Солько долек отломить?: "))
+if (k % n == 0 and n * m > k) or (k % m == 0 and n * m > k):
+    print(f'{n} {m} {k} -> yes')
+else:
+    print(f'{n} {m} {k} -> no')
